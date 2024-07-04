@@ -4,12 +4,12 @@
   "version": "1.0.0",
   "description": "Boost your productivity with our Pomodoro Chrome extension! Manage your time effectively by breaking your work into focused intervals, followed by short breaks. Stay on track, reduce distractions, and achieve more with structured work sessions.",
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
   },
   "action": {
-    "default_icon": "icon.png",
+    "default_icon": "images/icon.png",
     "default_title": "Focus Flow"
   }
 }
