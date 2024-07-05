@@ -33,5 +33,6 @@ function addTask() {
 }
 
 function deleteTask(taskNum) {
-    
+  taskList.splice(taskNum, 1);
+  renderTasks();
 }
