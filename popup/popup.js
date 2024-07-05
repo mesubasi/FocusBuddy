@@ -6,7 +6,7 @@ addTaskBtn.addEventListener("click", () => addTask());
 
 const taskList = [];
 
-function renderTask(tasknum) {
+function renderTask(taskNum) {
   const taskRow = document.createElement("div");
   const text = document.createElement("input");
   text.type = "text";
