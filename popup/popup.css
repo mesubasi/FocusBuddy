@@ -14,3 +14,8 @@ body {
 .img-size {
   width: 150px;
 }
+
+#add-task-btn {
+  border: 0px solid red;
+  border-radius: 2px;
+}
