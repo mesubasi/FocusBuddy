@@ -31,3 +31,7 @@ function addTask() {
   taskList.push("");
   renderTask(taskNum);
 }
+
+function deleteTask(taskNum) {
+    
+}
