@@ -14,6 +14,9 @@ function addTask() {
   const text = document.createElement("input");
   text.type = "text";
   text.placeholder = "Enter Value";
+  text.addEventListener("change", () => {
+    taskList[taskNum] = text.value;
+  });
 
   const deleteBtn = document.createElement("input");
   deleteBtn.type = "button";
