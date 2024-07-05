@@ -6,7 +6,7 @@ addTaskBtn.addEventListener("click", () => addTask());
 
 let taskList = [];
 
-chrome.storage.sync.get([taskList], (res) => {
+chrome.storage.sync.get(["taskList"], (res) => {
   taskList = res.taskList ? res.taskList : [];
   renderTasks();
 });
