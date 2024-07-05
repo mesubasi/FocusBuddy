@@ -6,10 +6,7 @@ addTaskBtn.addEventListener("click", () => addTask());
 
 const taskList = [];
 
-function addTask() {
-  const taskNum = taskList.length;
-  taskList.push("");
-
+function renderTask(tasknum) {
   const taskRow = document.createElement("div");
   const text = document.createElement("input");
   text.type = "text";
@@ -27,4 +24,9 @@ function addTask() {
 
   const taskContainer = document.getElementById("task-container");
   taskContainer.appendChild(taskRow);
+}
+
+function addTask() {
+  const taskNum = taskList.length;
+  taskList.push("");
 }
