@@ -29,4 +29,5 @@ function renderTask(tasknum) {
 function addTask() {
   const taskNum = taskList.length;
   taskList.push("");
+  renderTask(taskNum);
 }
