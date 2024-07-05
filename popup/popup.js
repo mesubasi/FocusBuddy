@@ -21,6 +21,7 @@ function renderTask(taskNum) {
   const taskRow = document.createElement("div");
   const text = document.createElement("input");
   text.type = "text";
+  text.value = taskList[taskNum];
   text.placeholder = "Enter Value";
   text.addEventListener("change", () => {
     taskList[taskNum] = text.value;
