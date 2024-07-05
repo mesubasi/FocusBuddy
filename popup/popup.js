@@ -9,4 +9,8 @@ function addTask() {
   const text = document.createElement("input");
   text.type = "text";
   text.placeholder = "Enter Value";
+
+  const deleteBtn = document.createElement("input");
+  text.type = "button";
+  text.placeholder = "X";
 }
