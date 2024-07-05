@@ -4,7 +4,7 @@ const addTaskBtn = document.getElementById("add-task-btn");
 
 addTaskBtn.addEventListener("click", () => addTask());
 
-const taskList = [];
+let taskList = [];
 
 chrome.storage.sync.get([taskList], (res) => {
   taskList = res.taskList ? res.taskList : [];
@@ -12,7 +12,7 @@ chrome.storage.sync.get([taskList], (res) => {
 });
 
 function saveTasks() {
-  chrome.storage.set.sync({
+  chrome.storage.sync.set({
     taskList,
   });
 }
