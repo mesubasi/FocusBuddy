@@ -11,6 +11,12 @@ chrome.storage.sync.get([taskList], (res) => {
   renderTasks();
 });
 
+function saveTasks() {
+  chrome.storage.set.sync({
+    taskList,
+  });
+}
+
 function renderTask(taskNum) {
   const taskRow = document.createElement("div");
   const text = document.createElement("input");
