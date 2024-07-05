@@ -11,8 +11,8 @@ function addTask() {
   text.placeholder = "Enter Value";
 
   const deleteBtn = document.createElement("input");
-  text.type = "button";
-  text.value = "X";
+  deleteBtn.type = "button";
+  deleteBtn.value = "X";
 
   taskRow.appendChild(text);
   taskRow.appendChild(deleteBtn);
