@@ -13,4 +13,10 @@ function addTask() {
   const deleteBtn = document.createElement("input");
   text.type = "button";
   text.placeholder = "X";
+
+  taskRow.appendChild(text);
+  taskRow.deleteBtn(deleteBtn);
+
+  const taskContainer = document.getElementById("task-container");
+  taskContainer = appendChild(taskRow);
 }
