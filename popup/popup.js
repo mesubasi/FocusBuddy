@@ -24,6 +24,7 @@ function renderTask(taskNum) {
   text.placeholder = "Enter Value";
   text.addEventListener("change", () => {
     taskList[taskNum] = text.value;
+    saveTasks();
   });
 
   const deleteBtn = document.createElement("input");
@@ -44,11 +45,13 @@ function addTask() {
   const taskNum = taskList.length;
   taskList.push("");
   renderTask(taskNum);
+  saveTasks();
 }
 
 function deleteTask(taskNum) {
   taskList.splice(taskNum, 1);
   renderTasks();
+  saveTasks();
 }
 function renderTasks() {
   const taskContainer = document.getElementById("task-container");
