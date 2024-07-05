@@ -18,6 +18,9 @@ function renderTask(tasknum) {
   const deleteBtn = document.createElement("input");
   deleteBtn.type = "button";
   deleteBtn.value = "X";
+  deleteBtn.addEventListener("click", () => {
+    deleteTask[taskNum] = text.value;
+  });
 
   taskRow.appendChild(text);
   taskRow.appendChild(deleteBtn);
@@ -35,4 +38,11 @@ function addTask() {
 function deleteTask(taskNum) {
   taskList.splice(taskNum, 1);
   renderTasks();
+}
+function renderTasks() {
+  const taskContainer = document.getElementById("task-container");
+  taskContainer.textContent = "";
+  taskList.forEach((text, taskNum) => {
+    renderTask(taskNum);
+  });
 }
