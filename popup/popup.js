@@ -19,7 +19,7 @@ function renderTask(taskNum) {
   deleteBtn.type = "button";
   deleteBtn.value = "X";
   deleteBtn.addEventListener("click", () => {
-    deleteTask(taskNum) = text.value;
+    deleteTask(taskNum);
   });
 
   taskRow.appendChild(text);
@@ -42,7 +42,7 @@ function deleteTask(taskNum) {
 function renderTasks() {
   const taskContainer = document.getElementById("task-container");
   taskContainer.textContent = "";
-  taskList.forEach((text, taskNum) => {
+  taskList.forEach((taskText, taskNum) => {
     renderTask(taskNum);
   });
 }
