@@ -6,6 +6,11 @@ addTaskBtn.addEventListener("click", () => addTask());
 
 const taskList = [];
 
+chrome.storage.sync.get([taskList], (res) => {
+  taskList = res.taskList ? res.taskList : [];
+  renderTasks();
+});
+
 function renderTask(taskNum) {
   const taskRow = document.createElement("div");
   const text = document.createElement("input");
