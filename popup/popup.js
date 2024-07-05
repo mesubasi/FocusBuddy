@@ -19,7 +19,7 @@ function renderTask(taskNum) {
   deleteBtn.type = "button";
   deleteBtn.value = "X";
   deleteBtn.addEventListener("click", () => {
-    deleteTask[taskNum] = text.value;
+    deleteTask(taskNum) = text.value;
   });
 
   taskRow.appendChild(text);
