@@ -4,7 +4,12 @@ const addTaskBtn = document.getElementById("add-task-btn");
 
 addTaskBtn.addEventListener("click", () => addTask());
 
+const taskList = [];
+
 function addTask() {
+  const taskNum = taskList.length;
+  taskList.push("");
+
   const taskRow = document.createElement("div");
   const text = document.createElement("input");
   text.type = "text";
