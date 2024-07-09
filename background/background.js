@@ -4,6 +4,12 @@ chrome.alarms.create("focusFlow", {
 
 chrome.alarms.onAlarm.addListener((alarm) => {
   if (alarm.name === "focusFlow") {
+    chrome.storage.local.get(("timer", "isRunning"), (res) => {
+      if (res.isRunning) {
+        let timer = res.timer + 1;
+        chrome.sotrage.local.set(timer);
+      }
+    });
   }
 });
 
