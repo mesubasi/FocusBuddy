@@ -1,5 +1,12 @@
 const startTimerBtn = document.getElementById("start-timer-btn");
 const resetTimerBtn = document.getElementById("reset-timer-btn");
+
+startTimerBtn.addEventListener("click", () => {
+  chrome.storage.local.set({
+    isRunning: true,
+  });
+});
+
 const addTaskBtn = document.getElementById("add-task-btn");
 
 // Add an event listener to the add task button to call the addTask function when clicked
