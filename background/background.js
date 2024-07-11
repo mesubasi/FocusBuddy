@@ -4,10 +4,11 @@ chrome.alarms.create("focusFlow", {
 
 chrome.alarms.onAlarm.addListener((alarm) => {
   if (alarm.name === "focusFlow") {
-    chrome.storage.local.get(("timer", "isRunning"), (res) => {
+    chrome.storage.local.get(["timer", "isRunning"], (res) => {
       if (res.isRunning) {
         let timer = res.timer + 1;
-        chrome.sotrage.local.set({
+        console.log(timer);
+        chrome.storage.local.set({
           timer,
         });
       }
@@ -15,7 +16,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
   }
 });
 
-chrome.storage.local.get(("timer", "isRunning"), (res) => {
+chrome.storage.local.get(["timer", "isRunning"], (res) => {
   chrome.storage.local.set({
     timer: "timer" in res ? res.timer : 0,
     isRunning: "isRunning" in res ? res.isRunning : false,
