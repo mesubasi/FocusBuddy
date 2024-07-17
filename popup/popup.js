@@ -1,6 +1,10 @@
 const startTimerBtn = document.getElementById("start-timer-btn");
 const resetTimerBtn = document.getElementById("reset-timer-btn");
 
+function updateTime() {
+  
+}
+
 startTimerBtn.addEventListener("click", () => {
   chrome.storage.local.get(["isRunning"], (res) => {
     chrome.storage.local.set(
