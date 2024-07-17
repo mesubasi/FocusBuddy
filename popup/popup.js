@@ -115,6 +115,9 @@ resetTimerBtn.addEventListener("click", () => {
       timer: 0,
       isRunning: false,
     },
-    updateTime()
+    () => {
+      startTimerBtn.textContent = "Start Timer";
+      updateTime();
+    }
   );
 });
