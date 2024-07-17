@@ -18,7 +18,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
           // Check if 25 minutes (1500 seconds) have passed.
           self.registration.showNotification("Focus Flow", {
             // Show a notification.
-            body: "25 minutes has passed!",
+            body: `${res.timeOption} minutes has passed!`,
             icon: "icon.png",
           });
           timer = 0; // Reset the timer.
