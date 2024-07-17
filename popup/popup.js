@@ -2,7 +2,9 @@ const startTimerBtn = document.getElementById("start-timer-btn");
 const resetTimerBtn = document.getElementById("reset-timer-btn");
 
 function updateTime() {
-  
+  chrome.storage.local.get(["timer", "timeOption", "isRunning"], (res) => {
+    
+  });
 }
 
 startTimerBtn.addEventListener("click", () => {
