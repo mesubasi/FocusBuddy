@@ -1,6 +1,8 @@
+// Get the start and reset timer buttons from the DOM
 const startTimerBtn = document.getElementById("start-timer-btn");
 const resetTimerBtn = document.getElementById("reset-timer-btn");
 
+// Function to update the displayed time
 function updateTime() {
   chrome.storage.local.get(["timer", "timeOption", "isRunning"], (res) => {
     const time = document.getElementById("time");
@@ -12,9 +14,10 @@ function updateTime() {
     time.textContent = `${minutes}:${seconds}`;
   });
 }
-updateTime();
-setInterval(updateTime, 1000);
+updateTime(); // Update the time immediately
+setInterval(updateTime, 1000); // Update the time every second
 
+// Add an event listener to the start timer button to start/pause the timer
 startTimerBtn.addEventListener("click", () => {
   chrome.storage.local.get(["isRunning"], (res) => {
     chrome.storage.local.set(
@@ -109,6 +112,7 @@ function renderTasks() {
   });
 }
 
+// Add an event listener to the reset timer button to reset the timer
 resetTimerBtn.addEventListener("click", () => {
   chrome.storage.local.set(
     {
