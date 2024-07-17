@@ -4,6 +4,7 @@ const resetTimerBtn = document.getElementById("reset-timer-btn");
 function updateTime() {
   chrome.storage.local.get(["timer", "timeOption", "isRunning"], (res) => {
     const time = document.getElementById("time");
+    const minutes = `${25 - Math.ceil(res.timer / 60)}`;
   });
 }
 
