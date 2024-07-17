@@ -1,6 +1,6 @@
 const timeOption = document.getElementById("time-option");
 
-text.addEventListener("change", (event) => {
+timeOption.addEventListener("change", (event) => {
   const val = event.target.value;
   if (val < 1 || val > 60) {
     timeOption.value = 25;
@@ -8,3 +8,4 @@ text.addEventListener("change", (event) => {
 });
 
 const saveBtn = document.getElementById("save-btn");
+saveBtn.addEventListener("click", (event) => {});
