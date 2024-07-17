@@ -1,8 +1,8 @@
 const timeOption = document.getElementById("time-option");
 
 timeOption.addEventListener("change", (event) => {
-  const val = event.target.value;
-  if (val < 1 || val > 60) {
+  const val = Number(event.target.value);
+  if (isNaN(val) || val < 1 || val > 60) {
     timeOption.value = 25;
   }
 });
@@ -11,11 +11,11 @@ const saveBtn = document.getElementById("save-btn");
 saveBtn.addEventListener("click", (event) => {
   chrome.storage.local.set({
     timer: 0,
-    timeOption: timeOption.value,
+    timeOption: Number(timeOption.value),
     isRunning: false,
   });
 });
 
 chrome.storage.local.get(["timeOption"], (res) => {
-  timeOption.value = res.timeOption;
+  timeOption.value = res.timeOption !== undefined ? res.timeOption : 25;
 });
