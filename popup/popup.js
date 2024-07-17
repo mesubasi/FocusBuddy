@@ -108,3 +108,13 @@ function renderTasks() {
     renderTask(taskNum);
   });
 }
+
+resetTimerBtn.addEventListener("click", () => {
+  chrome.storage.local.set(
+    {
+      timer: 0,
+      isRunning: false,
+    },
+    updateTime()
+  );
+});
