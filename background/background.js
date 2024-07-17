@@ -14,7 +14,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
         let timer = res.timer + 1; // Increment the timer by 1 second.
         let isRunning = true;
 
-        if (timer >= 60 * 25) {
+        if (timer === 60 * res.timeOption) {
           // Check if 25 minutes (1500 seconds) have passed.
           self.registration.showNotification("Focus Flow", {
             // Show a notification.
