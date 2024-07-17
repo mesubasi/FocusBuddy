@@ -36,9 +36,10 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 });
 
 // Initialize the timer and running status in local storage if they are not already set.
-chrome.storage.local.get(["timer", "isRunning"], (res) => {
+chrome.storage.local.get(["timer", "isRunning", "timeOption"], (res) => {
   chrome.storage.local.set({
     timer: "timer" in res ? res.timer : 0, // Set timer to 0 if not already set.
+    timeOption: "timeOption" in res ? res.timeOption : 25,
     isRunning: "isRunning" in res ? res.isRunning : false, // Set isRunning to false if not already set.
   });
 });
