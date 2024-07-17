@@ -8,4 +8,10 @@ timeOption.addEventListener("change", (event) => {
 });
 
 const saveBtn = document.getElementById("save-btn");
-saveBtn.addEventListener("click", (event) => {});
+saveBtn.addEventListener("click", (event) => {
+  chrome.storage.local.set({
+    timer: 0,
+    timeOption: timeOption.value,
+    isRunning: false,
+  });
+});
