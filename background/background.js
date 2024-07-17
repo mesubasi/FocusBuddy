@@ -7,7 +7,7 @@ chrome.alarms.create("focusFlow", {
 chrome.alarms.onAlarm.addListener((alarm) => {
   if (alarm.name === "focusFlow") {
     // Check if the triggered alarm is "focusFlow".
-    chrome.storage.local.get(["timer", "isRunning"], (res) => {
+    chrome.storage.local.get(["timer", "isRunning", "timeOption"], (res) => {
       // Get the current timer and running status from local storage.
       if (res.isRunning) {
         // If the timer is running.
