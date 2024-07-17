@@ -1,4 +1,4 @@
-const timeOption = document.getElementById("time-option");
+const timeOption = document.getElementById("timeOption");
 
 timeOption.addEventListener("change", (event) => {
   const val = Number(event.target.value);
