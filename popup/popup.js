@@ -12,6 +12,8 @@ function updateTime() {
     time.textContent = `${minutes}:${seconds}`;
   });
 }
+updateTime();
+setInterval(updateTime, 1000);
 
 startTimerBtn.addEventListener("click", () => {
   chrome.storage.local.get(["isRunning"], (res) => {
