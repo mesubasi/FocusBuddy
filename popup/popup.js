@@ -9,6 +9,7 @@ function updateTime() {
     if (res.timer % 60 != 0) {
       seconds = `${60 - (res.timer % 60)}`.padStart(2, "0");
     }
+    time.textContent = `${minutes}:${seconds}`;
   });
 }
 
