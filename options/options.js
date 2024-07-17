@@ -15,3 +15,7 @@ saveBtn.addEventListener("click", (event) => {
     isRunning: false,
   });
 });
+
+chrome.storage.local.get(["timeOption"], (res) => {
+  timeOption.value = res.timeOption;
+});
