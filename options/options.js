@@ -6,3 +6,5 @@ text.addEventListener("change", (event) => {
     timeOption.value = 25;
   }
 });
+
+const saveBtn = document.getElementById("save-btn");
