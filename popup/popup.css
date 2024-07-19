@@ -23,3 +23,11 @@ body {
   border: 0px solid red;
   border-radius: 2px;
 }
+
+#timer {
+  text-align: center;
+  font-size: 50px;
+  margin: 10px;
+  font-weight: 100px;
+  color: firebrick;
+}
