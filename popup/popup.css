@@ -57,3 +57,12 @@ body {
   padding: 5px 10px 5px 10px;
   width: 250px;
 }
+
+.task-delete {
+  outline: none;
+  border: none;
+  width: 25px;
+  height: 25px;
+  color: brown;
+  cursor: pointer;
+}
