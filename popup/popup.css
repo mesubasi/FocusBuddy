@@ -36,3 +36,15 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+
+#btn-container > button {
+  color: white;
+  background-color: firebrick;
+  border: 1px;
+  padding: 8px;
+  border-radius: 5px;
+  width: 100px;
+  font-weight: 200;
+  cursor: pointer;
+  margin: 2px;
+}
