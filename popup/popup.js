@@ -61,7 +61,7 @@ function renderTask(taskNum) {
   text.type = "text";
   text.value = taskList[taskNum];
   text.placeholder = "Enter Value";
-  taskContainer.className = "task-input";
+  text.className = "task-input";
 
   // Add an event listener to update the task list when the input value changes
   text.addEventListener("change", () => {
