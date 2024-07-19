@@ -61,6 +61,7 @@ function renderTask(taskNum) {
   text.type = "text";
   text.value = taskList[taskNum];
   text.placeholder = "Enter Value";
+  taskContainer.className = "task-input";
 
   // Add an event listener to update the task list when the input value changes
   text.addEventListener("change", () => {
@@ -71,6 +72,7 @@ function renderTask(taskNum) {
   const deleteBtn = document.createElement("input");
   deleteBtn.type = "button";
   deleteBtn.value = "X";
+  deleteBtn.className = "task-delete";
 
   // Add an event listener to delete the task when the delete button is clicked
   deleteBtn.addEventListener("click", () => {
