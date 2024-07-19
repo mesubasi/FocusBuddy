@@ -6,14 +6,15 @@ body {
 
 div {
   position: relative;
-  width: 600px;
-  height: 600px;
+  width: 650px;
   background-color: #fff;
   justify-content: center;
   border: 1px solid #ccc;
   text-align: center;
   border-radius: 3px;
   margin: 40px auto 20px;
+  padding: 32px;
+  height: 400px;
 }
 
 #save-btn {
