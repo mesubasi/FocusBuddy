@@ -24,10 +24,10 @@ body {
   border-radius: 2px;
 }
 
-#timer {
+#time {
   text-align: center;
   font-size: 50px;
   margin: 10px;
-  font-weight: 100px;
+  font-weight: 400px;
   color: firebrick;
 }
