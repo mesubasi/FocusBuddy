@@ -31,3 +31,8 @@ body {
   font-weight: 800px;
   color: firebrick;
 }
+
+#btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
