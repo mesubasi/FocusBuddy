@@ -48,3 +48,12 @@ body {
   cursor: pointer;
   margin: 2px;
 }
+
+.task-input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 5px 10px 5px 10px;
+  width: 250px;
+}
