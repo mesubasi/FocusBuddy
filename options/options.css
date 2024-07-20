@@ -18,6 +18,11 @@ div {
 }
 
 #save-btn {
+  display: flex;
+  position: absolute;
+  left: 50px;
+  justify-content: center;
+  bottom: 60px;
   background-color: #4d90fe;
   border: 1px solid #3079ed;
   color: #fff;
