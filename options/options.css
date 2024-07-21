@@ -38,3 +38,10 @@ div {
 #save-btn:hover {
   background-color: #357ae8;
 }
+
+#timeOption {
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  font-size: 25px;
+}
