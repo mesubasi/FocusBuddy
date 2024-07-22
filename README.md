@@ -59,19 +59,19 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 2. Create a new branch:
 
    ```bash
-   git checkout -b feature/YourFeatureName
+   git checkout -b feature/focus-flow
    ```
 
 3. Commit your changes:
 
    ```bash
-   git commit -m 'Add some feature'
+   git commit -m 'Add timer functionality'
    ```
 
 4. Push to the branch:
 
    ```bash
-   git push origin feature/YourFeatureName
+   git push origin feature/focus-flow
    ```
 
 5. Open a pull request.
