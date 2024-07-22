@@ -1,10 +1,10 @@
-<a href="https://chromewebstore.google.com/" target="_blank">
-<img src="https://raw.githubusercontent.com/mesubasi/focus-flow/main/images/picture.png" style="width: 250px; height: auto;" />
-</a>
-
 # Focus Flow
 
 Focus Flow is a Pomodoro-based Chrome extension designed to help you manage your time more effectively and increase productivity. By breaking your work into intervals, typically 25 minutes in length, separated by short breaks, Focus Flow helps you stay focused and maintain a steady workflow.
+
+<a href="https://chromewebstore.google.com/" target="_blank">
+<img src="https://raw.githubusercontent.com/mesubasi/focus-flow/main/images/picture.png" style="width: 200px; height: auto;" />
+</a>
 
 ## Features
 
