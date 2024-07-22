@@ -1,4 +1,6 @@
-<img src="https://raw.githubusercontent.com/mesubasi/focus-flow/main/images/picture.png">
+<a href="https://chromewebstore.google.com/">
+<img src="https://raw.githubusercontent.com/mesubasi/focus-flow/main/images/picture.png" style="width: 300px; height: auto;" />
+</a>
 
 # Focus Flow
 
