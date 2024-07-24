@@ -115,7 +115,7 @@ body {
   border-radius: 25px;
   margin: 5px 0;
   padding: 10px 15px;
-  width: 300px;
+  width: 280px;
   font-size: 1rem;
   animation: fade-in 0.5s ease-in-out;
 }
@@ -123,16 +123,19 @@ body {
 .task-delete {
   outline: none;
   border: none;
-  width: 25px;
-  height: 25px;
+  background-color: transparent;
   color: #ff6b6b;
   cursor: pointer;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  font-size: 1.2rem;
   transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
 }
 
 .task-delete:hover {
   color: #ff4b4b;
-  transform: rotate(20deg);
+  transform: scale(1.2);
 }
